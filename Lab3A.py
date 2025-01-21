@@ -1,0 +1,6 @@
+currentBalance = float(input("amount owed: $"))
+apr = float(input("APR: "))
+mpr = round(apr / 12,3)
+print("Monthly percentage rate: " + str(mpr))
+minPay = round((currentBalance * mpr)/100,2)
+print("Minimum payment: $" +str(minPay))
